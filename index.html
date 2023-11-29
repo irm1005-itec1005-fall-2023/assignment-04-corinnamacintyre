@@ -39,34 +39,38 @@
 
   -->
 
-  <div class="container">
+  <header>
+    <h2> TO DO TODAY! </h2>
 
+  </header>
+
+  <div class="container">
+    <main>
     <h1>To Do List</h1>
 
       <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita cumque odio dignissimos quisquam quis eaque magnam ullam optio ratione, autem asperiores excepturi recusandae nesciunt a tenetur? Accusantium, facere alias!</p>
 
     <!-- Let's now render our list from an array -->
-    <section class="form-example">
+    <div class="form-example">
+      
       <form id="form-todo">
+        <label for = "todo-form-input">What needs to be done?</label>
 
-        <input type="text" id="name-input-1" name="name-input-1" autocomplete="name" required />
+        <input type="text" id="name-input-1" name="name-input-1" autocomplete="name" placeholder = "Commit Arson" required />
 
         <button class="btn-primary" type="submit">Add To Do Item</button>
       </form>
 
-      <section>
-
-        <h3>What needs to be done?</h3>
+      <div class = "wahoo">
 
         <ul class="form-results" id="todo-list">
         </ul>
 
-        <p id="todo-count"></p>
-      </section>
+      </div>
 
-    </section>
+    </div class = "weewa">
 
   <script src="./script.js"></script>
-
+</main>
 </body>
 </html>

@@ -49,26 +49,45 @@ function handleSubmitForm(event) {
 }
 // Render the data to the page
 function renderData() {
-
   console.log("Render Data", toDoArray);
-
-  // Clear the list
   toDoList.innerHTML = "";
 
+//
   for (let i=0; i < toDoArray.length ; i++ ){
-    let tempListItem = document.createElement("div");
-
     let tempListItem = document.createElement("li");
-
-    tempListItem.textContent = toDoArray[i].text;
 
     tempListItem.textContent = toDoArray[i];
 
     let tempButton = document.createElement("button");
 
+    tempButton.textContent = "Click me";
+
+    tempButton.dataset.super = i;
+
+    tempListItem.appendChild(tempButton);
+
+    toDoList.appendChild(tempListItem);
+
+  }
+}
+  
+  // Clear the list
+
+  /*
+  for (let i=0; i < toDoArray.length ; i++ ){
+    let tempListItem = document.createElement("div");
+
+      listItemContainer.classList.add("todo-container")
+
+    let tempListItem = document.createElement("li");
+
+    tempListItem.textContent = toDoArray[i].text;
+
+    let tempButton = document.createElement("button");
+
     tempButton.textContent = "Finished";
 
-    tempButton.dataset.todo = i;
+    tempButton.dataset.super = index.toString ();
 
     // You can actually add an event handler here
     tempButton.addEventListener("click", function(event){
@@ -92,13 +111,11 @@ function renderData() {
 
   }
 }
+*/
 
 // Render the data to the page
 function renderData() {
-
   console.log("Render Data", toDoArray);
-
-  // Clear the list
   toDoList.innerHTML = "";
 
   for (let i=0; i < toDoArray.length ; i++ ){
