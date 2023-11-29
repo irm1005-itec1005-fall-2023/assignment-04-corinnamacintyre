@@ -23,6 +23,7 @@
   <!-- Set the Favicon  -->
   <link rel="icon" href="./images/favicon/rocket.svg" type="image/svg+xml" />
 </head>
+
 <body>
   <!--
 
@@ -32,7 +33,7 @@
 
     Important checklist:
 
-    - Are users able to create and delete to do list items?
+    - Are users able to create and delete to-do list items?
     - Have you set a favicon? (included - but it's a rocket)
     - Has a team member conducted a code review and left a GitHub Issue in your repo?
     - Have you conducted a code review and left a GitHub Issue on your team member's repo?
@@ -40,37 +41,46 @@
   -->
 
   <header>
-    <h2> TO DO TODAY! </h2>
-
+    <h2>TO DO TODAY!</h2>
   </header>
 
-  <div class="container">
-    <main>
+  <main class="container">
     <h1>To Do List</h1>
 
-      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita cumque odio dignissimos quisquam quis eaque magnam ullam optio ratione, autem asperiores excepturi recusandae nesciunt a tenetur? Accusantium, facere alias!</p>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo expedita cumque odio dignissimos
+      quisquam quis eaque magnam ullam optio ratione, autem asperiores excepturi recusandae nesciunt a tenetur?
+      Accusantium, facere alias!</p>
 
     <!-- Let's now render our list from an array -->
     <div class="form-example">
-      
       <form id="form-todo">
-        <label for = "todo-form-input">What needs to be done?</label>
-
-        <input type="text" id="name-input-1" name="name-input-1" autocomplete="name" placeholder = "Commit Arson" required />
-
+        <label for="todo-form-input">What needs to be done?</label>
+        <input type="text" id="name-input-1" name="name-input-1" autocomplete="name" placeholder="Commit Arson"
+          required />
         <button class="btn-primary" type="submit">Add To Do Item</button>
       </form>
 
-      <div class = "wahoo">
-
-        <ul class="form-results" id="todo-list">
-        </ul>
-
+      <div class="wahoo">
+        <div id="todo-list">
+          <!-- To-Do list will be dynamically rendered here -->
+        </div>
       </div>
 
-    </div class = "weewa">
+    </div>
 
-  <script src="./script.js"></script>
-</main>
+    <div id="completed-list">
+      <br>
+
+      <div class= "finished-container">
+      <h2 >Finished!</h2>
+      <div id="completed-items">
+        <!-- Completed items will be dynamically rendered here -->
+      </div>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </main>
 </body>
+
 </html>
