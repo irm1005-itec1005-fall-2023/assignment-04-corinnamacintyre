@@ -34,8 +34,6 @@ body {
 }
 
 main {
-  min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,26 +58,33 @@ main {
   flex-direction: column;
   justify-content:flex-start; 
   border-radius: 4rem;
-  max-height: 10rem;
   width: 40rem;
-  height: 40rem;
+  height: 30rem;
 
   align-items:center;
   background-color:whitesmoke;
   margin-top:10rem;
   margin-left: 30rem;
   margin-right: 30rem;
-  margin-bottom: 10rem;
+  word-wrap: break-word;
+ 
+  font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
 }
 
 .text {
   margin-left: 2rem;
   margin-right: 2rem; 
-  margin-bottom: 2rem;
+  align-items:center;
+
 }
 
 .header-format {
   background-color: brown;
-  margin: 1rem 2rem 2rem 1rem;
 }
 
+.you-got-this {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Courier New', Courier, monospace;
+  color:#f1faee;
+}

@@ -89,6 +89,18 @@ function renderRemovedToDo() {
   }
 } */
 
+// DOM Element for the Clear All button
+let clearAllButton = document.getElementById("clear-all-button");
+
+// Handle the click event for the Clear All button
+clearAllButton.addEventListener("click", function () {
+  // Clear the entire todo array
+  toDoArray = [];
+
+  // Re-render the list to reflect the changes
+  renderData();
+});
+
 function inititialise() {
   if (!appContainer) {
     console.error("Error: Could not find app container");
