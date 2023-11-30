@@ -39,10 +39,14 @@
 
     <!-- Let's now render our list from an array -->
     <div class="form-example">
-      <form id="form-todo">
-        <label for="todo-form-input">What needs to be done?</label>
-        <input type="text" id="name-input-1" name="name-input-1" autocomplete="name" placeholder="Commit Arson"
-          required />
+      <form id="form-todo" for="todo-form-input" >
+        <label >What needs to be done?</label>
+
+        <input type="text" 
+        id="name-input-1" 
+        autocomplete="additional-name" 
+        placeholder="Commit Arson"
+        required> 
         <button class="btn-primary" type="submit">Add To Do Item</button>
         <button id="clear-all-button">Clear Item</button>
 
@@ -64,9 +68,11 @@
         <!-- Completed items will be dynamically rendered here -->
       </div>
     </div>
-  </main>    
+  </main>   
+  
+  <script src="./script.js"></script>
+ 
   </body>
-<script src="./script.js"></script>
 
 
 </html>
