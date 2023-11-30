@@ -60,8 +60,9 @@ main {
   width: 40rem;
 
   align-items:center;
+  align-content: center;
   background-color:whitesmoke;
-  margin-top:1rem;
+  margin-top:15rem;
   margin-left: 30rem;
   margin-right: 3rem;
   margin-bottom: 1rem;
@@ -86,4 +87,11 @@ main {
   font-size: xx-large;
   font-family: 'Courier New', Courier, monospace;
   color:#f1faee;
+}
+
+.blurb {
+  align-items: center;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
