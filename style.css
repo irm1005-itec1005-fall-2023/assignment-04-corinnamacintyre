@@ -21,7 +21,7 @@
 
   /* Body configuration */
   --body-default-colour: var(--colour-cello);
-  --body-background-colour: var(--colour-peppermint);
+  --body-background-colour: pink;
 }
 
 /*
@@ -34,9 +34,6 @@ body {
 }
 
 main {
-  min-height: 100vh;
-
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -53,4 +50,48 @@ main {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
+}
+
+.container 
+{ display: flex;
+  flex-direction: column;
+  justify-content:flex-start; 
+  border-radius: 4rem;
+  width: 40rem;
+
+  align-items:center;
+  align-content: center;
+  background-color:whitesmoke;
+  margin-top:15rem;
+  margin-left: 30rem;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+ 
+  font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text {
+  margin-left: 2rem;
+  margin-right: 2rem; 
+  align-items:center;
+
+}
+
+.header-format {
+  background-color: brown;
+}
+
+.you-got-this {
+  text-align: center;
+  font-size: xx-large;
+  font-family: 'Courier New', Courier, monospace;
+  color:#f1faee;
+}
+
+.blurb {
+  align-items: center;
+  text-align: center;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
