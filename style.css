@@ -34,7 +34,6 @@ body {
 }
 
 main {
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -59,13 +58,13 @@ main {
   justify-content:flex-start; 
   border-radius: 4rem;
   width: 40rem;
-  height: 30rem;
 
   align-items:center;
   background-color:whitesmoke;
-  margin-top:10rem;
+  margin-top:1rem;
   margin-left: 30rem;
-  margin-right: 30rem;
+  margin-right: 3rem;
+  margin-bottom: 1rem;
   word-wrap: break-word;
  
   font-family: 'Franklin Gothic', 'Arial Narrow', Arial, sans-serif;
